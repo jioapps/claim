@@ -1,0 +1,19 @@
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+}
+
+[class*="container"], [class*="wrapper"], [class*="section"] {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
